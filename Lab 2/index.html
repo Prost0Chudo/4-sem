@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SVG</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Основы SVG</h1>
+        <h2>Примитивы SVG</h2>
+        <table border="1px solid black">
+            <tr>
+                <td>
+                    <svg  height="50" viewBox="0 0 50 50"  xmlns="http://www.w3.org/2000/svg">       
+                            <rect x="10" y="10" width="30" height="30" stroke="blue" fill="grey" stroke-width="5"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="yellow" stroke-width="2"/>
+                    </svg>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <svg  height="50" viewBox="0 0 50 50"  xmlns="http://www.w3.org/2000/svg">       
+                        <circle cx="25" cy="25" r="20" stroke="green" fill="purple" stroke-width="4"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg  height="70" viewBox="0 0 70 70"  xmlns="http://www.w3.org/2000/svg">       
+                        <ellipse cx="35" cy="35" rx="30" ry="15" stroke="red" fill="violet" stroke-width="5"/>
+                    </svg>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <svg  height="50" viewBox="0 0 50 50"  xmlns="http://www.w3.org/2000/svg">       
+                        <line x1="10" x2="40" y1="10" y2="40" stroke="tomato"   stroke-width="2"/>
+                    </svg>
+                </td>
+                <td>
+                    <svg  height="70" viewBox="0 0 70 70"  xmlns="http://www.w3.org/2000/svg">       
+                        <polyline points="10 10 20 20 20 50 30 50 50 60 50 10"
+                        stroke="gold" fill="red" stroke-width="3"/>                    
+                    </svg>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <svg  height="60" viewBox="0 0 60 60"  xmlns="http://www.w3.org/2000/svg">       
+                        <path d="M10,10 L30,30 L30,45 L45,30 Z" fill="white" stroke="black" stroke-width="5"/>
+                    </svg>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Комбинированный рисунок SVG</h2>
+        <div>
+            <svg  height="900" width="1250" xmlns="http://www.w3.org/2000/svg">
+            <rect x="350" y="0" width="710" height="300" fill="black" stroke-width="0"/>       
+            <rect x="350" y="200" width="710" height="100" fill="#43d143" stroke-width="0"/>
+            <rect x="450" y="110" width="40" height="150" fill="#964b00" stroke-width="0"/>
+            <ellipse cx="470" cy="100" rx="70" ry="80" fill="#76ff7a" stroke-width="0"/>
+            <rect x="600" y="150" width="200" height="100" fill="#964b00" stroke-width="0"/>
+            <rect x="630" y="190" width="30" height="30" fill="yellow" stroke-width="0"/>
+            <rect x="740" y="190" width="30" height="30" fill="yellow" stroke-width="0"/>
+            <rect x="685" y="190" width="30" height="30" fill="yellow" stroke-width="0"/>
+            <polyline points="580, 170 700, 0 820, 170 " stroke="#000" fill="#a03623" stroke-width="3"/>
+            <rect x="920" y="110" width="40" height="150" fill="#964b00" stroke-width="0"/>
+            <ellipse cx="940" cy="100" rx="70" ry="80" fill="#76ff7a" stroke-width="0"/>
+            </svg>
+    </div>
+    </div>
+</body>
+</html>
