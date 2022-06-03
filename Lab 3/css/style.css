@@ -1,0 +1,216 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    /* min-width: 1200px;  */
+    font-family: 'Raleway', sans-serif;
+    background: -webkit-linear-gradient(0deg, #edefee,#c9c9c9);
+    background: linear-gradient(0deg, #edefee,#c9c9c9);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px 0;
+    width: 1200px;
+    margin:  0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+.header {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/headerbackground.jpg);
+    background-position: top center;
+	background-size: cover;
+    padding-bottom: 170px;
+    /* background-attachment: fixed */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 44px;
+    font-weight: 700;
+    white-space: nowrap;
+    color: #FFF;
+}
+.logo span {
+    display: block;
+    color: #FFA737;
+}
+.menu {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+.menu__item {
+    margin: 20px;
+}
+.menu__item__link {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #FFF;
+}
+.menu__item__link:hover {
+    color:  #FFF;
+    text-decoration: none;
+    border-bottom:  2px solid #FFA737;
+}
+.contact-block {
+    margin-top: 250px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.btn {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    background: #FFA737;
+    padding: 25px 50px;
+    border-radius: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn:hover {
+    text-decoration: none;
+    background: #df932f;
+    transition: 0.5s;
+}
+
+.about {
+    padding: 30px 0;
+}
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.section-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-description__text {
+    padding-right: 30px;
+    font-size: 16px;
+}
+.section-description__image {
+    width: 50%;
+}
+
+.our-tours {
+    padding: 30px 0;
+}
+
+.carousel {
+    color: #170724;
+  
+    --carousel-button-bg: #fff;
+    --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0
+            0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+  
+    --carousel-button-svg-width: 20px;
+    --carousel-button-svg-height: 20px;
+    --carousel-button-svg-stroke-width: 2.5;
+}
+.carousel__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 80%;
+    height: 600px;
+    margin-right: 6px;
+
+    /* background-color: #eee; */
+    border-radius: 6px;
+}
+.slide-description {
+    text-transform: uppercase;
+    color: #df932f;
+    font-size: 38px;
+    font-weight: 700;
+}
+.more-info {
+    margin-top: 50px;
+    font-size: 16px;
+    text-align: center;
+}
+.our-tours .contact-block {
+    margin-top: 50px;
+}
+
+.call__form{
+	width: 100%;
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background:rgba(0, 0, 0, 0.3);
+    border-radius: 11px
+}
+.form__title{
+    font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+.ui__form {
+	max-width: 350px;
+}
+ .form__row {
+	position: relative;
+	margin: 30px 0;
+}
+::-webkit-input-placeholder {
+	color:#eee;
+    font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+::-moz-placeholder {
+	color: #fff;
+	font-size: 16px;
+}/* Firefox 19+ */
+:-moz-placeholder {
+	color:#fff;
+    font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}/* Firefox 18- */
+:-ms-input-placeholder {
+	color:#fff;
+    font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+ .form__row input {
+	width: 100%;
+	color: #fff;
+	font-size: 18px;
+	padding: 0 10px;
+	line-height: 40px;
+	background: none;
+	border-width: 0;
+	border-bottom: 2px solid #fff;
+	transition: all 0.2s ease;
+ }
+
+ .form__row input:focus {
+	outline: 0;
+	border-color: #FFA737;
+}
+ .form__row input:focus, .form__row input:valid {
+	border-color: #FFA737;
+	color: #fff;
+}
+ .button__form {
+    
+	border: 0;
+	margin-bottom: 0;
+ }

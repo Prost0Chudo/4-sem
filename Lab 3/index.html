@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/carousel.css" />
+    <title>Legendary Furniture</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    Legendary <span>Furniture</span>
+                </div>
+                <div class="menu">
+                    <div class="menu__item">
+                        <a href="#About us" class="menu__item__link">О нас</a>
+                    </div>
+                    <div class="menu__item">
+                        <a href="#Tours" class="menu__item__link">Наши работы</a>
+                    </div>
+                    <div class="menu__item">
+                        <a href="#LZ" class="menu__item__link">Оставить заявку</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-block">
+                <a href="#contact" class="btn">Оставить заявку</a>
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title" id="About us">О Нас</h2>
+            <div class="section-description">
+                <div class="section-description__text">
+                    Наша компания Legendary Furniture специализируется на украшении ваших прекрасных домов.
+                    <br><br>
+                    Мы предлагаем огромный выбор вариантов исполнения шкафов-купе,
+                    а также корпусной и встроенной мебели для прихожих, гостиных, спален, детских комнат, кабинетов и
+                    гардеробных. Единственное ограничение — ваша фантазия! Остальное — за нами!
+                    <br><br>
+                    Хорошая мебель должна быть красивой, функциональной, качественной и она должна быть изготовлена по
+                    индивидуальному заказу! Это означает, что мебель, которую Вы закажете в «Legendary Furniture», будет только у Вас
+                    и больше ни у кого! Мы умеем слышать клиента и учитывать его потребности.<br><br>
+                    Именно поэтому, сделав
+                    заказ в «Legendary Furniture», Вы можете быть уверены, что получите неповторимую мебель и качественный
+                    индивидуальный сервис.
+
+                    Мы заботимся о здоровье, безопасности и комфорте наших клиентов. Поэтому для создания нашей мебели
+                    мы используем только качественные, прочные, высокотехнологичные и экологически чистые материалы.
+                </div>
+                <img class="section-description__image" src="img/about.jpg" alt="travelling around the world">
+            </div>
+        </div>
+    </section>
+    <section class="our-tours">
+        <div class="container">
+            <h2 class="section-title" id="Tours">Наши работы</h2>
+            <div id="myCarousel" class="carousel">
+                <div class="carousel__slide" data-lazy-src="img/Venezia.jpg">
+                    <p class="slide-description">Набор: Венеция</p>
+                </div>
+                <div class="carousel__slide" data-lazy-src="img/Olivia.jpg">
+                    <p class="slide-description">Набор: Оливия</p>
+                </div>
+                <div class="carousel__slide" data-lazy-src="img/Kamelia.jpg">
+                    <p class="slide-description">Набор: Камелия</p>
+                </div>
+            </div>
+            <p class="more-info">
+                Для получения большей информации свяжитесь с нами
+            </p>
+            <div class="contact-block">
+                <a href="#contact" class="btn" id="#LZ">Оставить заявку</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Оставить заявку</h2>
+            <div class="call__form__wrapper">
+                <div class="call__form">
+                    <h3 class="form__title">Заполните форму и мы свяжемся с Вами</h3>
+                    <form class="ui__form">
+
+                        <div class="form__row">
+                            <input type="text" name="name" required autocomplete="off" placeholder="Ваше имя">
+                        </div>
+                        <div class="form__row">
+                            <input type="tel" id="phone" name="phone" required autocomplete="off"
+                                placeholder="+7 (999) 99 99 999">
+                        </div>
+                        <div>
+                            <input id="button__form" class="btn button__form" value="Оставить заявку">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/myCarousel.js"></script>
+    <script src="js/phoneMask.js"></script>
+    <script src="js/popup.js"></script>
+
+</body>
+
+
+</html>
