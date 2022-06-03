@@ -1,0 +1,31 @@
+@media print {
+    @page {
+        margin: 0.5cm;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .menu{
+        display: none;
+    }
+    header {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    section {
+        page-break-inside: avoid;
+        margin-bottom: 1cm;
+    }
+    .our-tours {
+        display: none;
+    }
+    .contact {
+        display: none;
+    }
+
+    p {
+        widows: 4;
+    }
+}
